@@ -1,0 +1,71 @@
+<html>
+  <head>
+     <title>[PV] - Home</title>
+      <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+
+    <div class="container"><br>
+      <center>
+        <h2>Welcome To Password Vault</h2>
+      </center>
+    </div>
+
+        <div><center><h4><i>Create Or Recover Password</i></h4></center></div>
+
+
+
+
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<center><a href="{{ url_for('create') }}">
+    <button class="button" style="vertical-align:middle"><span>Create</span></button></a></center>
+
+
+<center><a href="{{ url_for('recover') }}">
+    <button class="button" style="vertical-align:middle"><span>Recover</span></button></a></center>
