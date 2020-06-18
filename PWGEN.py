@@ -15,7 +15,7 @@ print(EXPLAIN_TEMPLATE_LOADING)
 
 DEBUG = True
 app = Flask(__name__)
-app = Flask(__name__, template_folder='../templates')
+app = Flask(__name__, template_folder='./templates')
 app.config.from_object(__name__)
 app.config['SECRET_KEY'] = 'SjdnUends821Jsdlkvxh391ksdODnejdDw'
 
